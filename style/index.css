@@ -52,7 +52,7 @@ body {
     .card-heder,
     .card-body,
     .card-footer {
-      padding: 0 !important;
+      padding: 0 1.2em !important;
     }
   }
 }
