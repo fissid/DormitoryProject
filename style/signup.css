@@ -1,0 +1,58 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  min-height: 100vh;
+  background-image: linear-gradient(to bottom right, #887870 30%, #c0ac90 70%);
+}
+
+.box {
+  width: 85vw;
+  margin: auto;
+  background-color: rgb(221, 221, 221, 0.5);
+  opacity: 0.85;
+  box-shadow: 2px 2px 20px 0px #333;
+}
+
+.box input {
+  background-color: rgb(255, 255, 255, 0.8);
+}
+
+.box .input-group-text,
+.box input,
+.lead {
+  border: 1px solid #333;
+}
+
+.box input::placeholder {
+  color: #222;
+}
+
+.devam span {
+  font-weight: 900;
+  font-size: 1.1em;
+}
+
+.devam {
+  color: #666 !important;
+}
+
+.devam:hover {
+  color: #fff !important;
+}
+
+@media (max-width: 575px) {
+  .resize {
+    font-size: 3em;
+  }
+
+  .box .resize {
+    font-size: 2em;
+  }
+}
