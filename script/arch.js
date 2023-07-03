@@ -36,23 +36,6 @@ for (let b = 0; b < newBtn.length; b++) {
   newBtn[b].addEventListener("click", () => {
     overlay.classList.remove("d-none");
     modalWindow.querySelector(".modal-title-word").textContent = newBtn[b].parentElement.parentElement.parentElement.previousElementSibling.querySelector("span").textContent;
-    // switch (b) {
-    //   case 0:
-    //     modalWindow.querySelector(".modal-title-word").textContent = "Şube";
-    //     break;
-    //   case 1:
-    //     modalWindow.querySelector(".modal-title-word").textContent = "Blok";
-    //     break;
-    //   case 2:
-    //     modalWindow.querySelector(".modal-title-word").textContent = "Kat";
-    //     break;
-    //   case 3:
-    //     modalWindow.querySelector(".modal-title-word").textContent = "Oda";
-    //     break;
-    //   case 4:
-    //     modalWindow.querySelector(".modal-title-word").textContent = "Yatak";
-    //     break;
-    // }
     modalWindow.classList.remove("d-none");
   });
 }
