@@ -1,0 +1,90 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  height: 100vh;
+}
+
+.devam {
+  background-color: rgb(28, 55, 56, 0.8);
+  border-radius: 5px;
+}
+
+.devam:hover {
+  background-color: rgb(28, 55, 56);
+  transition: all 0.1s;
+}
+
+.devam span {
+  font-weight: 900;
+}
+
+.back {
+  background: url("../img/back.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  transition: all 0.7s;
+  .overlay {
+    /* background-color: rgb(170, 170, 170, 0.5); */
+    background-color: rgb(223, 223, 223, 0.5);
+    backdrop-filter: blur(2px);
+  }
+  .card {
+    background-color: #ddd;
+    opacity: 0.9;
+    min-width: 40vw;
+    max-height: 85vh;
+    padding: 0 2em;
+    box-shadow: 2px 2px 50px 0px #333;
+    transition: all 0.7s;
+
+    .remember-me #remember {
+      transform: scale(1.5);
+    }
+  }
+}
+
+.card h4 {
+  cursor: default;
+}
+
+@media (max-width: 576px) {
+  .card {
+    padding: 0;
+  }
+}
+
+@media (max-width: 470px) {
+  .card {
+    padding: 0 !important;
+    margin: 0 1em;
+    .card-heder,
+    .card-body,
+    .card-footer {
+      padding: 0 1.2em !important;
+    }
+    .devam,
+    .devam span,
+    .card-header p,
+    .card-header a,
+    .form-control,
+    .hatirla,
+    .forgot,
+    .card-footer a {
+      font-size: 1em;
+    }
+    .devam span {
+      padding: 0 0.9em;
+    }
+    .card-title {
+      font-size: 3em;
+    }
+  }
+}
