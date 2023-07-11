@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style/users.css" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous" />
+    <title>Property</title>
+  </head>
+  <body>
+    <header>
+      <div class="p-3 text-black">
+        <h1 class="border-bottom border-dark p-2 resize">Demirbaş Yönetimi</h1>
+      </div>
+    </header>
+
+    <main>
+      <div class="box p-3">
+        <div class="card">
+          <div class="card-header border-bottom-0 p-4">
+            <form action="" class="form-inline">
+              <div class="input-group w-100">
+                <div class="input-group-prepend">
+                  <span class="input-group-text bg-white border-right-0">
+                    <i class="fa-solid fa-magnifying-glass fa-lg"></i>
+                  </span>
+                </div>
+                <input type="text" class="form-control border-left-0" placeholder="Ürün adı, Ürün numarası, Alınan tarihi " />
+                <button class="btn btn-primary new-btn" id="" data-toggle="modal" data-target="#new-property">Ürün ekle</button>
+                <div class="dropdown dropleft">
+                  <a class="btn border-0 bg-transparent" data-toggle="dropdown"><i class="fa-solid fa-ellipsis-vertical fa-xl"></i></a>
+                  <div class="dropdown-menu bg-light">
+                    <a href="#" class="dropdown-item">Eski --- ekle</a>
+                    <a href="#" class="dropdown-item">Ek bilgileri</a>
+                    <a href="#" class="dropdown-item">--- Degistir</a>
+                  </div>
+                </div>
+              </div>
+            </form>
+          </div>
+          <div class="card-body px-5">
+            <table class="table table-hover border-0">
+              <thead>
+                <tr>
+                  <th>Ürün adı</th>
+                  <th>Ürün numarası</th>
+                  <th>Ürün lokasiyonu</th>
+                  <th>Alınan tarihi</th>
+                  <th>Garantili</th>
+                  <th class="last-head"></th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Koltuk</td>
+                  <td>4564564654</td>
+                  <td>Kat 3 Oda1</td>
+                  <td>Ap 22, 2023</td>
+                  <td class="pl-5"><input type="checkbox" name="" id="" class="form-check-input" checked /></td>
+                  <td class="p-0">
+                    <a class="btn bg-transparent d-none info" data-toggle="dropdown">
+                      <i class="fa-solid fa-ellipsis-vertical fa-lg"></i>
+                    </a>
+                  </td>
+                </tr>
+                <tr>
+                  <td>Koltuk</td>
+                  <td>6516165166</td>
+                  <td>Kat 3 Oda1</td>
+                  <td>Ap 22, 2023</td>
+                  <td class="pl-5"><input type="checkbox" name="" id="" class="form-check-input" checked /></td>
+                  <td class="p-0">
+                    <a class="btn bg-transparent d-none info" data-toggle="dropdown">
+                      <i class="fa-solid fa-ellipsis-vertical fa-lg"></i>
+                    </a>
+                  </td>
+                </tr>
+                <tr>
+                  <td>Koltuk</td>
+                  <td>6516165166</td>
+                  <td>Kat 3 Oda1</td>
+                  <td>Ap 22, 2023</td>
+                  <td class="pl-5"><input type="checkbox" name="" id="" class="form-check-input" checked /></td>
+                  <td class="p-0">
+                    <a class="btn bg-transparent d-none info" data-toggle="dropdown">
+                      <i class="fa-solid fa-ellipsis-vertical fa-lg"></i>
+                    </a>
+                  </td>
+                </tr>
+                <tr>
+                  <td>Koltuk</td>
+                  <td>6516165166</td>
+                  <td>Kat 3 Oda1</td>
+                  <td>Ap 22, 2023</td>
+                  <td class="pl-5"><input type="checkbox" name="" id="" class="form-check-input" checked /></td>
+                  <td class="p-0">
+                    <a class="btn bg-transparent d-none info" data-toggle="dropdown">
+                      <i class="fa-solid fa-ellipsis-vertical fa-lg"></i>
+                    </a>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer></footer>
+
+    <div class="modal" id="new-property">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <form action="#">
+            <div class="modal-header bg-light">
+              <div class="modal-title">
+                <h4>Yeni --- ekle</h4>
+              </div>
+              <button class="close" data-dismiss="modal">&times;</button>
+            </div>
+            <div class="modal-body">
+              <div class="form-group">
+                <label for="id" class="h6">ID:</label>
+                <input type="number" name="id" class="form-control form-control-sm" disabled />
+              </div>
+
+              <div class="form-group">
+                <label for="name" class="h6 text-capitalize">--- ismi</label>
+                <input type="text" name="name" class="form-control form-control-sm" />
+              </div>
+
+              <div class="form-group">
+                <label for="email" class="h6 text-capitalize">---</label>
+                <input type="email" name="email" class="form-control form-control-sm" />
+              </div>
+
+              <div class="form-group">
+                <label for="tel" class="h6 text-capitalize">--- numarası</label>
+                <input type="tel" name="tel" class="form-control form-control-sm" inputmode="numeric" data-toggle="tooltip" data-placement="left" data-html="true" title="<h5 class='text-capitalize'>örnek:</h5><p>0501xxxxxx</p>" />
+              </div>
+              <div class="form-group">
+                <label for="manager" class="h6 text-capitalize">Oluşturuldu</label>
+                <input type="date" name="manager" class="form-control form-control-sm" disabled />
+              </div>
+
+              <div class="form-group">
+                <label for="manager" class="h6 text-capitalize">Giriş yapıldı</label>
+                <input type="datetime-local" name="manager" class="form-control form-control-sm" />
+              </div>
+            </div>
+            <div class="modal-footer bg-light">
+              <button type="submit" class="btn btn-primary btn-block" id="add-newşube" data-dismiss="modal">
+                <span class="h5">Ekle</span>
+              </button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+    <script src="https://kit.fontawesome.com/dc35ddc557.js" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
+    <script src="./script/property.js"></script>
+  </body>
+</html>
