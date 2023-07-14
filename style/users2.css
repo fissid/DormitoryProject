@@ -37,6 +37,9 @@ main {
 .btns a:any-link {
   color: #333;
 }
+.btns a:any-link:hover {
+  opacity: 0.6;
+}
 .profile-container {
   width: 60px;
   height: auto;
