@@ -11,35 +11,40 @@
   </head>
   <body>
     <main class="d-flex">
-      <nav class="nav navbar mb-auto px-2">
-        <div class="container p-0">
-          <ul class="navbar-nav">
-            <li class="nav-item m-auto">
+      <nav class="nav navbar px-1 h-100">
+        <div class="container p-0 h-100">
+          <ul class="navbar-nav mb-auto h-100">
+            <li class="nav-item mx-auto">
               <a href="#" class="nav-link logo-container"><img class="logo" src="./img/logo.png" alt="" /></a>
             </li>
-            <li class="nav-item m-auto">
-              <a href="#" class="nav-link"><i class="fa-solid fa-house"></i></a>
+            <li class="nav-item mx-auto pb-1 pt-2">
+              <a href="#" class="nav-link"><i class="fa-solid fa-house fa-lg"></i></a>
             </li>
-            <li class="nav-item m-auto">
-              <a href="#" class="nav-link"><i class="fa-solid fa-gear"></i></a>
+            <li class="nav-item mx-auto py-1">
+              <a href="#" class="nav-link"><i class="fa-solid fa-gear fa-lg"></i></a>
             </li>
-            <li class="nav-item m-auto">
-              <a href="#" class="nav-link"><i class="fa-solid fa-city"></i></a>
+            <li class="nav-item mx-auto py-1">
+              <a href="#" class="nav-link"><i class="fa-solid fa-city fa-lg"></i></a>
             </li>
-            <li class="nav-item m-auto">
-              <a href="#" class="nav-link"><i class="fa-solid fa-user"></i></a>
+            <li class="nav-item mx-auto py-1">
+              <a href="#" class="nav-link"><i class="fa-solid fa-user fa-lg"></i></a>
             </li>
-            <li class="nav-item m-auto">
-              <a href="#" class="nav-link"><i class="fa-solid fa-book-open-reader"></i></a>
+            <li class="nav-item mx-auto py-1">
+              <a href="#" class="nav-link"><i class="fa-solid fa-book-open-reader fa-lg"></i></a>
             </li>
-            <li class="nav-item m-auto">
-              <a href="#" class="nav-link"><i class="fa-solid fa-graduation-cap"></i></a>
+            <li class="nav-item mx-auto py-1">
+              <a href="#" class="nav-link"><i class="fa-solid fa-graduation-cap fa-lg"></i></a>
             </li>
-            <li class="nav-item m-auto">
-              <a href="#" class="nav-link"><i class="fa-solid fa-clipboard-check"></i></a>
+            <li class="nav-item mx-auto py-1">
+              <a href="#" class="nav-link"><i class="fa-solid fa-clipboard-check fa-lg"></i></a>
             </li>
-            <li class="nav-item m-auto">
-              <a href="#" class="nav-link"><i class="fa-solid fa-microscope"></i></a>
+            <li class="nav-item mx-auto py-1">
+              <a href="#" class="nav-link"><i class="fa-solid fa-microscope fa-lg"></i></a>
+            </li>
+            <li class="nav-item mt-auto mx-auto py-1 text-light date text-center">
+              <span class="date-date"></span>
+              <span class="week-day d-block text-uppercase"></span>
+              <span class="clock d-block"></span>
             </li>
           </ul>
         </div>
@@ -148,6 +153,55 @@
         </div>
       </section>
     </main>
+    <div class="modal" id="new-user">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <form action="#">
+            <div class="modal-header bg-light">
+              <div class="modal-title">
+                <h4>Yeni kullanıcı ekle</h4>
+              </div>
+              <button class="close" data-dismiss="modal">&times;</button>
+            </div>
+            <div class="modal-body">
+              <div class="form-group">
+                <label for="id" class="h6">ID:</label>
+                <input type="number" name="id" class="form-control form-control-sm" disabled />
+              </div>
+
+              <div class="form-group">
+                <label for="name" class="h6 text-capitalize">Kullanıcı ismi</label>
+                <input type="text" name="name" class="form-control form-control-sm" />
+              </div>
+
+              <div class="form-group">
+                <label for="email" class="h6 text-capitalize">Email</label>
+                <input type="email" name="email" class="form-control form-control-sm" />
+              </div>
+
+              <div class="form-group">
+                <label for="tel" class="h6 text-capitalize">Telefon numarası</label>
+                <input type="tel" name="tel" class="form-control form-control-sm" inputmode="numeric" data-toggle="tooltip" data-placement="left" data-html="true" title="<h5 class='text-capitalize'>örnek:</h5><p>0501xxxxxx</p>" />
+              </div>
+              <div class="form-group">
+                <label for="manager" class="h6 text-capitalize">Oluşturuldu</label>
+                <input type="date" name="manager" class="form-control form-control-sm" id="today-date" disabled />
+              </div>
+
+              <div class="form-group">
+                <label for="manager" class="h6 text-capitalize">Giriş yapıldı</label>
+                <input type="datetime-local" name="manager" class="form-control form-control-sm" />
+              </div>
+            </div>
+            <div class="modal-footer bg-light">
+              <button type="submit" class="btn btn-primary btn-block" id="add-newşube" data-dismiss="modal">
+                <span class="h5">Ekle</span>
+              </button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
     <script src="https://kit.fontawesome.com/dc35ddc557.js" crossorigin="anonymous"></script>
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
