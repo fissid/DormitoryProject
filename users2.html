@@ -51,11 +51,29 @@
       </nav>
       <section class="page-content bg-white">
         <div class="btns">
-          <a href="#" class="btn btn-link"><i class="fa-solid fa-circle-question fa-xl"></i></a>
-          <a href="#" class="btn btn-link"><i class="fa-solid fa-bell fa-xl"></i></a>
-          <a href="#" class="btn btn-link profile-container">
-            <img src="../img/user-2.jpg" alt="" class="profile" />
-          </a>
+          <div class="dropleft">
+            <a href="#" class="btn btn-link" data-toggle="dropdown"><i class="fa-solid fa-circle-question fa-xl"></i></a>
+            <div class="dropdown-menu">
+              <a href="#" class="dropdown-item">tmp</a>
+              <a href="#" class="dropdown-item">tmp</a>
+            </div>
+          </div>
+          <div class="dropleft">
+            <a href="#" class="btn btn-link" data-toggle="dropdown"><i class="fa-solid fa-bell fa-xl"></i></a>
+            <div class="dropdown-menu notif">
+              <a href="#" class="dropdown-item">notif</a>
+              <a href="#" class="dropdown-item">notif</a>
+            </div>
+          </div>
+          <div class="dropleft">
+            <a href="#" class="btn btn-link profile-container" data-toggle="dropdown">
+              <img src="../img/user-2.jpg" alt="" class="profile" />
+            </a>
+            <div class="dropdown-menu text-center">
+              <img src="./img/user-2.jpg" class="profile rounded-circle" alt="" />
+              <h5>Saeed Salehi</h5>
+            </div>
+          </div>
         </div>
         <div class="p-3 text-black">
           <h1 class="border-bottom border-dark p-2 resize">Kullanıcı bilgileri</h1>
@@ -136,6 +154,7 @@
                       <a class="btn bg-transparent mt-1 d-none info" data-toggle="dropdown"><i class="fa-solid fa-ellipsis-vertical fa-lg"></i></a>
                     </td>
                   </tr>
+
                   <tr>
                     <td>Saeed Salehi</td>
                     <td>Monster@me.com</td>
@@ -202,6 +221,7 @@
         </div>
       </div>
     </div>
+
     <script src="https://kit.fontawesome.com/dc35ddc557.js" crossorigin="anonymous"></script>
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
