@@ -1,4 +1,8 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter&display=swap");
+:root {
+  --color-lightGreen: #16c1c1;
+  --color-lightGreenBack: #e5f7f7;
+}
 
 * {
   margin: 0;
@@ -102,6 +106,16 @@ main {
 
 .card-body {
   overflow: auto;
+}
+
+.card-header {
+  background-color: var(--color-lightGreenBack) !important;
+  .new-btn {
+    background-color: var(--color-lightGreen);
+  }
+  .dropleft {
+    color: var(--color-lightGreen);
+  }
 }
 
 .table tr th {
