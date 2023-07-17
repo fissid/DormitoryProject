@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style/users2.css" />
+    <!-- users, property css is same -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous" />
+    <title>Students</title>
+  </head>
+  <body>
+    <main class="d-flex">
+      <nav class="nav navbar px-1 h-100">
+        <div class="container p-0 h-100">
+          <ul class="navbar-nav mb-auto h-100">
+            <li class="nav-item mx-auto">
+              <a href="#" class="nav-link logo-container"><img class="logo" src="./img/logo.png" alt="" /></a>
+            </li>
+            <li class="nav-item mx-auto pb-1 pt-2">
+              <a href="#" class="nav-link"><i class="fa-solid fa-house fa-lg"></i></a>
+            </li>
+            <li class="nav-item mx-auto py-1">
+              <a href="#" class="nav-link"><i class="fa-solid fa-gear fa-lg"></i></a>
+            </li>
+            <li class="nav-item mx-auto py-1">
+              <a href="#" class="nav-link"><i class="fa-solid fa-city fa-lg"></i></a>
+            </li>
+            <li class="nav-item mx-auto py-1">
+              <a href="#" class="nav-link"><i class="fa-solid fa-user fa-lg"></i></a>
+            </li>
+            <li class="nav-item mx-auto py-1">
+              <a href="#" class="nav-link"><i class="fa-solid fa-book-open-reader fa-lg"></i></a>
+            </li>
+            <li class="nav-item mx-auto py-1">
+              <a href="#" class="nav-link"><i class="fa-solid fa-graduation-cap fa-lg"></i></a>
+            </li>
+            <li class="nav-item mx-auto py-1">
+              <a href="#" class="nav-link"><i class="fa-solid fa-clipboard-check fa-lg"></i></a>
+            </li>
+            <li class="nav-item mx-auto py-1">
+              <a href="#" class="nav-link"><i class="fa-solid fa-microscope fa-lg"></i></a>
+            </li>
+            <li class="nav-item mt-auto mx-auto py-1 text-light date text-center">
+              <span class="date-date"></span>
+              <span class="week-day d-block text-uppercase"></span>
+              <span class="clock d-block"></span>
+            </li>
+          </ul>
+        </div>
+      </nav>
+      <section class="page-content bg-white">
+        <div class="btns">
+          <div class="dropleft">
+            <a href="#" class="btn btn-link" data-toggle="dropdown"><i class="fa-solid fa-circle-question fa-xl"></i></a>
+            <div class="dropdown-menu">
+              <a href="#" class="dropdown-item">tmp</a>
+              <a href="#" class="dropdown-item">tmp</a>
+            </div>
+          </div>
+          <div class="dropleft">
+            <a href="#" class="btn btn-link" data-toggle="dropdown"><i class="fa-solid fa-bell fa-xl"></i></a>
+            <div class="dropdown-menu notif">
+              <a href="#" class="dropdown-item">notif</a>
+              <a href="#" class="dropdown-item">notif</a>
+            </div>
+          </div>
+          <div class="dropleft">
+            <a href="#" class="btn btn-link profile-container" data-toggle="dropdown">
+              <img src="../img/user-2.jpg" alt="" class="profile" />
+            </a>
+            <div class="dropdown-menu text-center">
+              <img src="./img/user-2.jpg" class="profile rounded-circle" alt="" />
+              <h5>Saeed Salehi</h5>
+            </div>
+          </div>
+        </div>
+        <div class="p-3 text-black">
+          <h1 class="border-bottom border-dark p-2 resize">Öğrenci yönetimi</h1>
+        </div>
+        <div class="p-3">
+          <div class="card">
+            <div class="card-header border-bottom-0 p-4">
+              <form action="" class="form-inline">
+                <div class="input-group w-100">
+                  <div class="input-group-prepend">
+                    <span class="input-group-text bg-white border-right-0">
+                      <i class="fa-solid fa-magnifying-glass fa-lg"></i>
+                    </span>
+                  </div>
+                  <input type="text" class="form-control border-left-0" placeholder="Kullanıcı ismi, Email, Telefon numarası " />
+                  <button class="btn text-white new-btn" id="" data-toggle="modal" data-target="#new-user">Öğrenci Ekle</button>
+                  <div class="dropleft">
+                    <a class="btn border-0 bg-transparent" data-toggle="dropdown"><i class="fa-solid fa-ellipsis-vertical fa-xl"></i></a>
+                    <div class="dropdown-menu bg-light">
+                      <a href="#" class="dropdown-item">Eski ... ekle</a>
+                      <a href="#" class="dropdown-item">Ek bilgileri</a>
+                      <a href="#" class="dropdown-item">... Degistir</a>
+                    </div>
+                  </div>
+                </div>
+              </form>
+            </div>
+            <div class="card-body px-5">
+              <table class="table table-hover border-0">
+                <thead>
+                  <tr>
+                    <th>Öğrenci adı</th>
+                    <th>Email</th>
+                    <th>Telefon numarası</th>
+                    <th>TC No</th>
+                    <th>Öğrenci No</th>
+                    <th class="last-head"></th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>Saeed Salehiii</td>
+                    <td>Monster@me.com</td>
+                    <td>+901234567899</td>
+                    <td>5165165166</td>
+                    <td>5619416465</td>
+                    <td class="p-0">
+                      <a class="btn bg-transparent mt-1 d-none info" data-toggle="dropdown">
+                        <i class="fa-solid fa-ellipsis-vertical fa-lg"></i>
+                      </a>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>Saeed Salehii</td>
+                    <td>Monster@me.com</td>
+                    <td>+901234567899</td>
+                    <td>5165165166</td>
+                    <td>5619416465</td>
+                    <td class="p-0">
+                      <a class="btn bg-transparent mt-1 d-none info" data-toggle="dropdown">
+                        <i class="fa-solid fa-ellipsis-vertical fa-lg"></i>
+                      </a>
+                      <div class="dropdown-menu">
+                        <a href="#" class="dropdown-item">Reset password</a>
+                        <a href="#" class="dropdown-item">Disable account</a>
+                        <a href="#" class="dropdown-item">Delete account</a>
+                      </div>
+                    </td>
+                  </tr>
+
+                  <tr>
+                    <td>Saeed Salehi</td>
+                    <td>Monster@me.com</td>
+                    <td>+901234567899</td>
+                    <td>5165165166</td>
+                    <td>5619416465</td>
+                    <td class="p-0">
+                      <a class="btn bg-transparent mt-1 d-none info" data-toggle="dropdown"><i class="fa-solid fa-ellipsis-vertical fa-lg"></i></a>
+                    </td>
+                  </tr>
+
+                  <tr>
+                    <td>Saeed Salehi</td>
+                    <td>Monster@me.com</td>
+                    <td>+901234567899</td>
+                    <td>5165165166</td>
+                    <td>7619416465</td>
+                    <td class="p-0">
+                      <a class="btn bg-transparent mt-1 d-none info" data-toggle="dropdown"><i class="fa-solid fa-ellipsis-vertical fa-lg"></i></a>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <div class="modal" id="new-user">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <form action="#">
+            <div class="modal-header bg-light">
+              <div class="modal-title">
+                <h4>Yeni Öğrenci ekle</h4>
+              </div>
+              <button class="close" data-dismiss="modal">&times;</button>
+            </div>
+            <div class="modal-body">
+              <div class="form-group">
+                <label for="id" class="h6">ID:</label>
+                <input type="number" name="id" class="form-control form-control-sm" disabled />
+              </div>
+
+              <div class="form-group">
+                <label for="name" class="h6 text-capitalize">Öğrenci adı</label>
+                <input type="text" name="name" class="form-control form-control-sm" />
+              </div>
+
+              <div class="form-group">
+                <label for="email" class="h6 text-capitalize">Email</label>
+                <input type="email" name="email" class="form-control form-control-sm" />
+              </div>
+
+              <div class="form-group">
+                <label for="tel" class="h6 text-capitalize">Telefon numarası</label>
+                <input type="tel" name="tel" class="form-control form-control-sm" inputmode="numeric" data-toggle="tooltip" data-placement="left" data-html="true" title="<h5 class='text-capitalize'>örnek:</h5><p>0501xxxxxx</p>" />
+              </div>
+              <div class="form-group">
+                <label for="tcno" class="h6 text-capitalize">TC NO</label>
+                <input type="number" name="tcno" class="form-control form-control-sm" />
+              </div>
+
+              <div class="form-group">
+                <label for="stdid" class="h6 text-capitalize">Öğrenci No</label>
+                <input type="number" name="stdid" class="form-control form-control-sm" />
+              </div>
+            </div>
+            <div class="modal-footer bg-light">
+              <button type="submit" class="btn btn-primary btn-block" id="add-newşube" data-dismiss="modal">
+                <span class="h5">Ekle</span>
+              </button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <script src="https://kit.fontawesome.com/dc35ddc557.js" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
+    <script src="./script/students.js"></script>
+  </body>
+</html>

@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous" />
+    <link rel="stylesheet" href="./style/arch3.css" />
+    <title>Arch3</title>
+  </head>
+  <body>
+    <header>
+      <div class="p-3 text-black">
+        <h1 class="border-bottom border-dark p-2 resize">Yurt Mimarisi</h1>
+      </div>
+    </header>
+
+    <main>
+      <div class="box row no-gutters">
+        <div class="col-md" id="col--0" data-col="şube">
+          <div class="card">
+            <div class="card-header d-flex align-items-center">
+              <i class="fa-solid fa-city fa-lg fa-xl"></i>
+              <span class="m-auto h5 font-weight-bold">Şube</span>
+            </div>
+            <div class="card-body">
+              <ul class="list-group list-group-flush" data-next="#col--1">
+                <li class="list-group-item p-2" id="şube">
+                  <a class="btn btn-link p-0 d-flex align-items-center justify-content-center text-primary new-btn" id="" data-toggle="modal" data-target="">
+                    <span class="bg-transparent text-primary px-1">
+                      <i class="fa-solid fa-plus fa-lg"></i>
+                    </span>
+                    <span class="h5">Yeni Şube Ekle</span>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md d-none" id="col--1" data-col="blok">
+          <div class="card">
+            <div class="card-header d-flex align-items-center">
+              <i class="fa-solid fa-building fa-xl"></i>
+              <span class="m-auto h5 font-weight-bold">Blok</span>
+            </div>
+            <div class="card-body">
+              <ul class="list-group list-group-flush" data-next="#col--2">
+                <li class="list-group-item p-2" id="blok">
+                  <div class="btn btn-link p-0 d-flex align-items-center justify-content-center text-primary new-btn" id="" data-toggle="modal" data-target="">
+                    <span class="bg-transparent text-primary px-1">
+                      <i class="fa-solid fa-plus fa-lg"></i>
+                    </span>
+                    <span class="h5">Yeni Blok Ekle</span>
+                  </div>
+                </li>
+
+                <!-- <li class="list-group-item p-2 border-top-0">
+                  <div class="btn p-0 d-flex justify-content-between align-items-center text-dark indiv">
+                    <span class="h5">blok A</span>
+                    <span class="badge badge-secondary bg-transparent text-dark d-none">
+                      <i class="fa-solid fa-chevron-right fa-lg"></i>
+                    </span>
+                  </div>
+                </li>
+
+                <li class="list-group-item p-2">
+                  <div class="btn p-0 d-flex justify-content-between align-items-center text-dark indiv">
+                    <span class="h5">blok B</span>
+                    <span class="badge badge-secondary bg-transparent text-dark d-none">
+                      <i class="fa-solid fa-chevron-right fa-lg"></i>
+                    </span>
+                  </div>
+                </li> -->
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md d-none" id="col--2" data-col="kat">
+          <div class="card">
+            <div class="card-header d-flex align-items-center">
+              <i class="fa-solid fa-stairs fa-xl"></i>
+              <span class="m-auto h5 font-weight-bold">Kat</span>
+            </div>
+            <div class="card-body">
+              <ul class="list-group list-group-flush" data-next="#col--3">
+                <li class="list-group-item p-2" id="kat">
+                  <div class="btn btn-link p-0 d-flex align-items-center justify-content-center text-primary new-btn" id="" data-toggle="modal" data-target="">
+                    <span class="bg-transparent text-primary px-1">
+                      <i class="fa-solid fa-plus fa-lg"></i>
+                    </span>
+                    <span class="h5">Yeni Kat Ekle</span>
+                  </div>
+                </li>
+
+                <!-- <li class="list-group-item p-2 border-top-0">
+                  <div class="btn p-0 d-flex justify-content-between align-items-center text-dark indiv">
+                    <span class="h5">Kat 1</span>
+                    <span class="badge badge-secondary bg-transparent text-dark d-none">
+                      <i class="fa-solid fa-chevron-right fa-lg"></i>
+                    </span>
+                  </div>
+                </li>
+
+                <li class="list-group-item p-2">
+                  <div class="btn p-0 d-flex justify-content-between align-items-center text-dark indiv">
+                    <span class="h5">Kat 2</span>
+                    <span class="badge badge-secondary bg-transparent text-dark d-none">
+                      <i class="fa-solid fa-chevron-right fa-lg"></i>
+                    </span>
+                  </div>
+                </li> -->
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md d-none" id="col--3" data-col="oda">
+          <div class="card">
+            <div class="card-header d-flex align-items-center">
+              <i class="fa-solid fa-person-shelter fa-xl"></i>
+              <span class="m-auto h5 font-weight-bold">Oda</span>
+            </div>
+            <div class="card-body">
+              <ul class="list-group list-group-flush" data-next="#col--4">
+                <li class="list-group-item p-2" id="oda">
+                  <div class="btn btn-link p-0 d-flex align-items-center justify-content-center text-primary new-btn" id="" data-toggle="modal" data-target="">
+                    <span class="bg-transparent text-primary px-1">
+                      <i class="fa-solid fa-plus fa-lg"></i>
+                    </span>
+                    <span class="h5">Yeni Oda Ekle</span>
+                  </div>
+                </li>
+
+                <!-- <li class="list-group-item p-2 border-top-0">
+                  <div class="btn p-0 d-flex justify-content-between align-items-center text-dark indiv">
+                    <span class="h5">Oda 101</span>
+                    <span class="badge badge-secondary bg-transparent text-dark d-none">
+                      <i class="fa-solid fa-chevron-right fa-lg"></i>
+                    </span>
+                  </div>
+                </li>
+
+                <li class="list-group-item p-2">
+                  <div class="btn p-0 d-flex justify-content-between align-items-center text-dark indiv">
+                    <span class="h5">Oda 102</span>
+                    <span class="badge badge-secondary bg-transparent text-dark d-none">
+                      <i class="fa-solid fa-chevron-right fa-lg"></i>
+                    </span>
+                  </div>
+                </li> -->
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md d-none" id="col--4" data-col="yatak">
+          <div class="card">
+            <div class="card-header d-flex align-items-center">
+              <i class="fa-solid fa-bed fa-xl"></i>
+              <span class="m-auto h5 font-weight-bold">Yatak</span>
+            </div>
+            <div class="card-body">
+              <ul class="list-group list-group-flush">
+                <li class="list-group-item p-2" id="yatak">
+                  <div class="btn btn-link p-0 d-flex align-items-center justify-content-center text-primary new-btn" id="" data-toggle="modal" data-target="">
+                    <span class="bg-transparent text-primary px-1">
+                      <i class="fa-solid fa-plus fa-lg"></i>
+                    </span>
+                    <span class="h5">Yeni Yatak Ekle</span>
+                  </div>
+                </li>
+
+                <!-- <li class="list-group-item p-2 border-top-0">
+                  <div class="btn p-0 d-flex justify-content-between align-items-center text-dark indiv">
+                    <span class="h5">Yatak 1</span>
+                    <span class="badge badge-secondary bg-transparent text-dark d-none">
+                      <i class="fa-solid fa-check fa-lg"></i>
+                    </span>
+                  </div>
+                </li>
+
+                <li class="list-group-item p-2">
+                  <div class="btn p-0 d-flex justify-content-between align-items-center text-dark indiv">
+                    <span class="h5">Yatak 2</span>
+                    <span class="badge badge-secondary bg-transparent text-dark d-none">
+                      <i class="fa-solid fa-check fa-lg"></i>
+                    </span>
+                  </div>
+                </li> -->
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <!-- <div class="modal" id="new-branch">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <form action="#">
+            <div class="modal-header bg-light">
+              <div class="modal-title">
+                <h4>Yeni Şube ekle</h4>
+              </div>
+              <button class="close" data-dismiss="modal">&times;</button>
+            </div>
+            <div class="modal-body">
+              <div class="form-group">
+                <label for="id" class="h5">ID:</label>
+                <input type="number" name="id" class="form-control" disabled />
+              </div>
+              <div class="form-group">
+                <label for="name" class="h5 text-capitalize">adı:</label>
+                <input type="text" name="name" class="form-control" />
+              </div>
+
+              <div class="form-group">
+                <label for="tel" class="h5 text-capitalize">Tel:</label>
+                <input type="tel" name="tel" class="form-control" inputmode="numeric" data-toggle="tooltip" data-placement="left" data-html="true" title="<h5 class='text-capitalize'>örnek:</h5><p>0501xxxxxx</p>" />
+              </div>
+              <div class="form-group">
+                <label for="manager" class="h5 text-capitalize">müdür:</label>
+                <input type="text" name="manager" class="form-control" />
+              </div>
+            </div>
+            <div class="modal-footer bg-light">
+              <button type="submit" class="btn btn-primary btn-block" id="add-newşube" data-dismiss="modal">
+                <span class="h5">Ekle</span>
+              </button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div> -->
+
+    <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/dc35ddc557.js" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
+    <script src="./script/arch3.js"></script>
+  </body>
+</html>
