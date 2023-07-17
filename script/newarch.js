@@ -9,28 +9,25 @@ const newDormitory = {
   ownerName: "saeed salehi",
   ownerTel: "05010586003",
   ownerMail: "saeed@gmail.com",
-  şubes: [],
-  bloks: [],
-  kats: [],
-  odas: [],
-  yataks: [],
 };
 
 const şube = {
   şubeID: 0,
   şubeName: "",
-  şubeTel: 0,
+  şubeTel: "",
   şubeManager: "",
   bloks: [],
 };
 
 const blok = {
+  şubeID: 0,
   blokID: 0,
   blokName: "",
   kats: [],
 };
 
 const kat = {
+  blokID: 0,
   katID: 0,
   katNum: 0,
   odas: [],
@@ -73,7 +70,7 @@ const openModal = function (target, name) {
               </div>
               <div class="form-group">
               <label for="name" class="h5 text-capitalize">adı:</label>
-              <input type="text" name="name" class="form-control" value="Blok " id="blokName"/>
+              <input type="text" name="name" class="form-control"  id="blokName"/>
             </div>`,
     kat: `<div class="form-group">
             <label for="id" class="h5">ID:</label>
@@ -81,7 +78,7 @@ const openModal = function (target, name) {
           </div>
           <div class="form-group">
             <label for="name" class="h5 text-capitalize">kat numarası:</label>
-            <input type="text" name="name" class="form-control" value="Kat " id="katNum"/>
+            <input type="text" name="name" class="form-control" id="katNum"/>
           </div>`,
     oda: `<div class="form-group">
             <label for="id" class="h5">ID:</label>
@@ -89,7 +86,7 @@ const openModal = function (target, name) {
           </div>
           <div class="form-group">
             <label for="name" class="h5 text-capitalize">oda numarası:</label>
-            <input type="text" name="name" class="form-control" value="Oda " id="odaNum"/>
+            <input type="text" name="name" class="form-control" id="odaNum"/>
           </div>`,
     yatak: `<div class="form-group">
               <label for="id" class="h5">ID:</label>
@@ -97,7 +94,7 @@ const openModal = function (target, name) {
             </div>
             <div class="form-group">
               <label for="name" class="h5 text-capitalize">yatak numarası:</label>
-              <input type="text" name="name" class="form-control" value="Yatak " id="yatakNum"/>
+              <input type="text" name="name" class="form-control"  id="yatakNum"/>
             </div>`,
   };
   const modalTag = `
@@ -112,7 +109,6 @@ const openModal = function (target, name) {
               <button class="close" data-dismiss="modal">&times;</button>
             </div>
             <div class="modal-body">
-              
               ${boxes[name]}
             </div>
             <div class="modal-footer bg-light">
@@ -132,9 +128,10 @@ const addNewData = function (name) {
   const submitBtn = document.querySelector(".submit-btn");
   submitBtn.addEventListener("click", function (e) {
     e.preventDefault();
-    const inputs = this.parentElement.parentElement.querySelectorAll("input");
-
-    console.log(inputs);
+    const inputs = [...this.parentElement.parentElement.querySelectorAll(".modal-body input")];
+    inputs.forEach((inp) => {
+      inp.value = "";
+    });
   });
 };
 
@@ -166,7 +163,7 @@ const OpenModal = function () {
 
 const addArrow = function () {
   // add event for each button of each column
-  document.querySelectorAll(".col .indiv").forEach((each) => {
+  document.querySelectorAll(".col-sm .indiv").forEach((each) => {
     each.addEventListener("click", function () {
       // clear all badges(arrows) in the column if exist
       each.parentElement.parentElement.querySelectorAll(".badge").forEach((badge) => {

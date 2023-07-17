@@ -34,3 +34,21 @@ this.addEventListener("click", function () {
     }
   });
 });
+
+const now = new Date();
+// navbar date display
+document.querySelector(".date .date-date").textContent = new Intl.DateTimeFormat("tr-TR", {
+  year: "numeric",
+  month: "2-digit",
+  day: "2-digit",
+}).format(now);
+document.querySelector(".date .week-day").textContent = new Intl.DateTimeFormat("tr-TR", {
+  weekday: "long",
+}).format(now);
+setInterval(() => {
+  document.querySelector(".date .clock").textContent = new Intl.DateTimeFormat("tr-TR", {
+    hour: "2-digit",
+    minute: "2-digit",
+    second: "2-digit",
+  }).format(new Date());
+}, 1000);
