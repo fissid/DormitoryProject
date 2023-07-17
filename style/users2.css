@@ -33,6 +33,8 @@ main {
   transform: scale(1);
 }
 .btns {
+  display: flex;
+  align-items: center;
   position: absolute;
   top: 10px;
   right: 20px;
@@ -43,6 +45,11 @@ main {
 .btns a:any-link:hover {
   opacity: 0.6;
 }
+
+.notif {
+  /* background-color: #eee !important; */
+}
+
 .profile-container {
   width: 60px;
   height: auto;
@@ -58,11 +65,11 @@ main {
   color: #ccc;
 }
 
-.navbar {
+/* .navbar {
   position: fixed;
   top: 0;
   left: 0;
-}
+} */
 
 .date {
   font-size: 0.75em;

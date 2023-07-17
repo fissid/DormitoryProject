@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter&display=swap");
 
 * {
   margin: 0;
@@ -7,7 +7,7 @@
 }
 
 body {
-  font-family: "Roboto", sans-serif !important;
+  font-family: "Inter", sans-serif !important;
   min-height: 100vh;
   /* background-image: linear-gradient(to bottom right, #887870 30%, #c0ac90 70%); */
 }
@@ -19,16 +19,10 @@ body {
   color: #000;
 }
 
-.box {
+.card {
   width: 85vw;
   margin: auto;
-  background-color: rgb(238, 238, 238);
-  opacity: 0.85;
-  box-shadow: 1px 1px 8px 0px rgb(34, 34, 34, 0.7);
   transition: all 0.7s;
-}
-
-.card {
   box-shadow: 1px 1px 5px 0px rgb(34, 34, 34, 0.2);
   height: 65vh;
 }
